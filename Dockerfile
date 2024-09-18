@@ -6,8 +6,8 @@ RUN mkdir -p /etc/ssl/certs/
 RUN mkdir -p /etc/ssl/private/
 
 
-COPY /etc/ssl/certs/selfsigned.crt /etc/ssl/certs/selfsigned.crt
-COPY /etc/ssl/private/selfsigned.key /etc/ssl/private/selfsigned.key
+COPY crt /etc/ssl/certs/selfsigned.crt
+COPY key /etc/ssl/private/selfsigned.key
 
 
 COPY . .
