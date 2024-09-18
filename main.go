@@ -81,7 +81,10 @@ func main() {
 	http.Handle("/", http.FileServer(http.Dir("./")))
 
 	log.Println("Started server on http://localhost:8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+
+	log.Fatal(http.ListenAndServeTLS(":443", "/etc/ssl/certs/selfsigned.crt", "/etc/ssl/private/selfsigned.key", nil))
+
+	// log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 func copyPirschJs() {
