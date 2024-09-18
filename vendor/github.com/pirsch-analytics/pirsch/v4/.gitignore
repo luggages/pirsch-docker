@@ -1,0 +1,7 @@
+.idea/
+js/node_modules/
+js/pirsch.min.js
+js/pirsch-events.min.js
+tracker/geodb/GeoLite2-Country.mmdb
+demos/frontend/pirsch.js
+demos/frontend/pirsch-events.js
